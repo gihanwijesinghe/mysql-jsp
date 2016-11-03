@@ -58,7 +58,7 @@
         String password = request.getParameter("password");
        
         try{        
-            Class.forName("com.mysql.jdbc.Driver");  // MySQL database connection
+            Class.forName("com.mysql.jdbc.Driver");  // MySQL database connection define
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?" , "finley", "some_pass");
         
             Statement st = conn.createStatement();
